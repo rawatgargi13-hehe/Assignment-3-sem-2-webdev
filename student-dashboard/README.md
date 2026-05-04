@@ -25,22 +25,6 @@ Follow these steps to run the application locally.
 
 Ensure you have Node.js and npm installed on your system.
 
-### Installation
-
-1.  Navigate to the project directory:
-    ```bash
-    cd student-dashboard
-    ```
-
-2.  Install the dependencies:
-    ```bash
-    npm install
-    ```
-
-3.  Start the development server:
-    ```bash
-    npm run dev
-    ```
 
 4.  Open your browser and navigate to the local URL provided in the terminal (usually http://localhost:5173).
 
