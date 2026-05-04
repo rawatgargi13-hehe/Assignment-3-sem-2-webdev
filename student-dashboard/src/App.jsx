@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import TopScorer from './components/TopScorer'
-import StudentStats from './components/StudentStats'
-import StudentTable from './components/StudentTable'
-import AddStudentForm from './components/AddStudentForm'
+import Header from './Components/Header'
+import TopScorer from './Components/TopScorer'
+import StudentStats from './Components/StudentStats'
+import StudentTable from './Components/StudentTable'
+import AddStudentForm from './Components/AddStudentForm'
 import './App.css'
 
 function App() {
