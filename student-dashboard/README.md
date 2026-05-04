@@ -1,16 +1,57 @@
-# React + Vite
+# Student Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application for tracking and managing student performance. This application provides a simple interface to view, add, update, and remove students from a scoreboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **View All Students:** Displays a comprehensive list of students with their current scores and pass/fail status.
+*   **Top Scorer Highlight:** Automatically calculates and prominently displays the student with the highest score.
+*   **Student Statistics:** Provides a quick overview of the total number of students, the number of passing students, and the number of failing students.
+*   **Add New Students:** Includes a form to easily add new students to the dashboard by providing their name and score.
+*   **Update Scores:** Allows direct editing of student scores within the table, updating the overall statistics and top scorer dynamically.
+*   **Remove Students:** Provides functionality to remove individual students from the list.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   React
+*   Vite
+*   Vanilla CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the application locally.
+
+### Prerequisites
+
+Ensure you have Node.js and npm installed on your system.
+
+### Installation
+
+1.  Navigate to the project directory:
+    ```bash
+    cd student-dashboard
+    ```
+
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser and navigate to the local URL provided in the terminal (usually http://localhost:5173).
+
+## Project Structure
+
+The project components are located in the `src/Components` directory:
+
+*   `App.jsx`: Main application container managing state and component composition.
+*   `Header.jsx`: Displays the application title and subtitle.
+*   `TopScorer.jsx`: Calculates and presents the highest scoring student.
+*   `StudentStats.jsx`: Shows aggregated data (total, passed, failed).
+*   `StudentTable.jsx`: Renders the table holding all student records.
+*   `StudentRow.jsx`: Represents a single row in the student table, handling individual score updates and removals.
+*   `AddStudentForm.jsx`: A form component for inputting new student data.
